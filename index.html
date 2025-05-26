@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Budget Tracker</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Budget Tracker</h1>
+            <div class="main-content">
+            <form class="form-content">
+            <div id="budget">
+                <div class="budget-row">
+                    <label for="budgetInput">Total Monthly Budget:</label>
+                    <input type="number" id="budgetInput" name="budgetInput" />
+                </div>
+                    <button class="budgetButton" id="budgetButton">Add Budget</button>
+            </div>
+            <div id="expenses">
+                <div class="expense-row1">
+                <label for="expenseInput">Expense Amount:</label>
+                <input type="number" id="expenseInput" name="expenseInput"/>
+                </div>
+                <div class="expense-row2">
+                    <label for="expenseCategory">Expense Category:</label>
+                    <select type="text" id="categoryInput" name="expenseCategory">
+                        <option>Choose a category</option>
+                        <option>Childcare</option>
+                        <option>Debt</option>
+                        <option>Education</option>
+                        <option>Groceries</option>
+                        <option>Healthcare</option>
+                        <option>Housing</option>
+                        <option>Insurance</option>
+                        <option>Savings</option>
+                        <option>Transportation</option>
+                        <option>Utilities</option>
+                    </select>
+                </div>
+                <div class="expense-row3">
+                <label for="descriptionInput">Expense Description:</label>
+                <textarea id="descriptionInput" name="descriptionInput" placeholder="This section is optional."></textarea>
+                </div>
+                <button class="expenseButton" id="expenseButton">Add Expense</button>
+            </div>
+            </form>
+            <div class="breakdown-content">
+                <h2>Breakdown</h2>
+                <div class="filterContainer">
+                <select id="filter" class="filter">
+                    <option value="all">All</option>
+                    <option value="childcare">Childcare</option>
+                    <option value="debt">Debt</option>
+                    <option value="education">Education</option>
+                    <option value="groceries">Groceries</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="housing">Housing</option>
+                    <option value="insurance">Insurance</option>
+                    <option value="savings">Savings</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="utilities">Utilities</option>
+                </select>
+                 <p id="categoryTotal" class="categoryTotal"></p>
+                </div>
+                <h3 id="budgetPrice"></h3>
+                <div id="expenseList" class="expenseList"></div>
+                <hr id="divider"/>
+                <div id="total" class="total">Total: <span id="leftoverAmount"></span></div>
+                <button id="clearBtn" class="clearBtn">Clear All Entries</button>
+            </div>    
+                </div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>

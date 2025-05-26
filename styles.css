@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cddbf4;
+    margin: 0;
+    padding: 20px;
+    color: #191515;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+#budget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.budget-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-direction: column;
+
+}
+
+.budget-row input {
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.budget-row label {
+  font-size: 20px;
+}
+
+.budgetButton {
+  padding: 8px 16px;
+  font-size: 16px;
+  width: 45%;
+  cursor: pointer;
+  background-color: #52a8ff;
+  border-radius: 5px;
+}
+
+#expenses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.expense-row1, .expense-row2, .expense-row3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+
+.expense-row1 input {
+    padding: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.expense-row2 select {
+     padding: 5px;
+    font-size: 16px;
+    width: 215px;
+}
+
+.expense-row3 textarea {
+  width: auto;
+  height: 150px;
+  font-size: 18px;
+}
+
+
+.expense-row1 label, .expense-row2 label, .expense-row3 label {
+    font-size: 20px;
+}
+
+.expenseButton {
+    padding: 8px 16px;
+    font-size: 16px;
+    width: 45%;
+    cursor: pointer;
+    background-color: #52a8ff;
+    border-radius: 5px;
+}
+
+
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.breakdown-content {
+  flex: 1;
+  max-width: 70%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-content {
+  flex: 1;
+  max-width: 25%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+
+@media (max-width: 775px) {
+  .budget-row,
+  .expense-row1,
+  .expense-row2,
+  .expense-row3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .budgetButton,
+  .expenseButton {
+    width: 100%; /* Button fills the width on small screens */
+  }
+
+
+  .expense-row1 input,
+  .expense-row2 select, 
+  .expense-row3 textarea {
+        width: 100%; /* Input fills the width on small screens */
+    }
+
+    .expense-row1 label,
+    .expense-row2 label,
+    .expense-row3 label {
+        font-size: 18px; /* Adjust label size for smaller screens */
+    }
+
+    .budget-row input {
+            width: 100%; /* Adjust label size for smaller screens */
+        }
+    .budget-row label {
+            font-size: 18px; /* Adjust label size for smaller screens */
+            display: block; /* Ensure label is on a new line */
+        }
+}
+
+
+
+h2 {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+
+
+h3 {
+  font-size: 22px;
+}
+
+.expenseList {
+  font-size: 20px;
+}
+
+hr {
+  visibility: hidden;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.total {
+  visibility: hidden;
+  font-size: 18px;
+}
+
+.filterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Push items to the right */
+    width: 100%;
+}
+
+.filter,
+.categoryTotal {
+    margin: 5px 0;
+}
+
+.filter {
+    padding: 4px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.clearBtn {
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+
