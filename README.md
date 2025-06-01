@@ -8,4 +8,5 @@ A simple budget tracking app built with JavaScript, HTML, and CSS.
 - Color-coded entries
 
 ## Live Demo
-[View Budget Tracker](https://andrewramirez.github.io/Budget-Tracker/)
+[View Budget Tracker](https://ajramirezcodes.github.io/ajramirezcodes/)
+
